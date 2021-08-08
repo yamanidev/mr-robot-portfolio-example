@@ -1,0 +1,54 @@
+/* Order of properties: 
+1. Dimensions (height, width)
+2. Margins, paddings and borders
+3. Display/position styles
+4. Font styles
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+}
+
+#showcase{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    background:linear-gradient(rgba(37, 43, 54, 0.4), rgba(37, 43, 54, 0.4)),
+    url("../img/bg-img.jpg") no-repeat center 58%/cover;
+}
+
+.showcase-title{
+    border: 2px solid white;
+    padding: 0.7rem;
+    position: relative;
+    bottom: 1.5rem;
+    color: white;
+}
+
+.showcase-title h1{
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.showcase-title h2{
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 700px){
+    .showcase-title h1{
+        font-size: 4.3rem;
+    }
+    .showcase-title h2{
+        font-size: 1rem;
+    }
+}
