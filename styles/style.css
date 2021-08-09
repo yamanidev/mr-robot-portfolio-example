@@ -47,7 +47,7 @@ a{
     color: white;
 }
 
-.home-title h1, .home-title h2{
+.home-title h1, .home-title p{
     user-select: none;
 }
 
@@ -56,7 +56,7 @@ a{
     font-weight: 400;
 }
 
-.home-title h2{
+.home-title p{
     font-size: 1.7rem;
     font-weight: 300;
 }
@@ -65,7 +65,7 @@ a{
     .home-title h1{
         font-size: 3.8rem;
     }
-    .home-title h2{
+    .home-title p{
         font-size: 1.2rem;
     }
 }
@@ -74,7 +74,7 @@ a{
     .home-title h1{
         font-size: 3rem;
     }
-    .home-title h2{
+    .home-title p{
         font-size: 1.1rem;
     }
     #home{
