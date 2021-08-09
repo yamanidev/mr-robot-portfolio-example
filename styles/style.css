@@ -29,7 +29,7 @@ a{
 
 /* Showcase styles */
 
-#showcase{
+#home{
     height: 90vh;
     display: flex;
     align-items: center;
@@ -39,7 +39,7 @@ a{
     url("../img/bg-img.jpg") no-repeat center 58%/cover;
 }
 
-.showcase-title{
+.home-title{
     border: 2px solid white;
     padding: 0.7rem;
     position: relative;
@@ -47,33 +47,37 @@ a{
     color: white;
 }
 
-.showcase-title h1{
+.home-title h1, .home-title h2{
+    user-select: none;
+}
+
+.home-title h1{
     font-size: 5rem;
     font-weight: 400;
 }
 
-.showcase-title h2{
+.home-title h2{
     font-size: 1.7rem;
     font-weight: 300;
 }
 
 @media screen and (max-width: 700px){
-    .showcase-title h1{
+    .home-title h1{
         font-size: 3.8rem;
     }
-    .showcase-title h2{
+    .home-title h2{
         font-size: 1.2rem;
     }
 }
 
 @media screen and (max-width: 370px){
-    .showcase-title h1{
+    .home-title h1{
         font-size: 3rem;
     }
-    .showcase-title h2{
+    .home-title h2{
         font-size: 1.1rem;
     }
-    #showcase{
+    #home{
         background-position: 60% center;
     }
 }
