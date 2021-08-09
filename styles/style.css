@@ -5,6 +5,8 @@
 4. Font styles
 */
 
+/* Generic styles */
+
 *{
     margin: 0;
     padding: 0;
@@ -12,15 +14,26 @@
 }
 
 body{
+    font-family: 'Oswald', sans-serif;
     font-size: 16px;
 }
+
+li{
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Showcase styles */
 
 #showcase{
     height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Oswald', sans-serif;
     text-align: center;
     background:linear-gradient(rgba(37, 43, 54, 0.4), rgba(37, 43, 54, 0.4)),
     url("../img/bg-img.jpg") no-repeat center 58%/cover;
@@ -63,5 +76,33 @@ body{
     #showcase{
         background-position: 60% center;
     }
+}
+
+/* Top navbar styles */
+
+.top-nav{
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#252b36;
+}
+
+.top-nav-links{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 370px){
+    /* This is until I figure out a design for the hamburger menu */
+    .top-nav-links{
+        width: 100%;
+    }
+}
+
+header{
+    position: sticky;
+    top: 0;
 }
 
