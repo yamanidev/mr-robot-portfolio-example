@@ -16,7 +16,6 @@
 body{
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
-    height: 400vh;
 }
 
 li{
@@ -28,12 +27,27 @@ a{
     text-decoration: none;
 }
 
+p{
+    font-weight: 300;
+}
+
+h3{
+    font-weight: 400;
+}
+
 button{
     border: none;
     outline: none;
     font-family: 'Oswald', sans-serif;
     cursor: pointer;
 }
+
+section:not(:first-child){
+    border: 1px solid black;
+    width: 80%;
+    margin: 3rem auto;
+}
+
 
 /* Showcase styles */
 
@@ -66,7 +80,6 @@ button{
 
 .home-titles p{
     font-size: 1.7rem;
-    font-weight: 300;
 }
 
 @media screen and (max-width: 700px){
@@ -118,12 +131,6 @@ header{
     top: 0;
 }
 
-#about{
-    /* border: 2px solid red; */
-    width: 80%;
-    margin: 0 auto;
-}
-
 /* Generic section titles */
 
 .section-titles{
@@ -139,19 +146,16 @@ header{
 
 .section-titles p{
     margin-top: 1rem;
+    font-weight: 400;
     color: gray;
 }
 
-/* About section text and image */
+/* About section */
 
 .about-info{
     width: 45%;
     padding: 1rem;
     text-align: justify;
-}
-
-.about-info p{
-    font-weight: 300;
 }
 
 .about-info h3{
@@ -174,12 +178,12 @@ p.job-title{
     background: linear-gradient(to right, #813ad9, #536cfc);
 }
 
-.container{
+.about-container{
     display: flex;
     justify-content: center;
 }
 
-.container{
+.about-container{
     margin-top: 2rem;
 }
 
@@ -188,7 +192,7 @@ p.job-title{
 }
 
 @media screen and (max-width: 1000px){
-    .container{
+    .about-container{
         flex-direction: column;
         align-items: center;
     }
@@ -209,3 +213,49 @@ p.job-title{
     }   
 }
 
+.services-container{
+    margin: 6rem auto;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.service-logo-circle{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 20px;
+}
+
+.service-logo-circle img{
+    width: 50px;
+}
+
+.service{
+    width: 33%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service p{
+    color: rgb(104, 102, 102);
+}
+
+.service-logo-circle, .service h3, .service p{
+    margin: 1rem auto;
+}
+
+@media screen and (max-width: 600px){
+    .services-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .service{
+        width: 90%;
+    }
+}
