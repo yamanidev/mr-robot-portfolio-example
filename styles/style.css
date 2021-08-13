@@ -16,6 +16,7 @@
 body{
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
+    height: 400vh;
 }
 
 li{
@@ -25,6 +26,13 @@ li{
 a{
     color: white;
     text-decoration: none;
+}
+
+button{
+    border: none;
+    outline: none;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
 }
 
 /* Showcase styles */
@@ -39,7 +47,7 @@ a{
     url("../img/bg-img.jpg") no-repeat center 58%/cover;
 }
 
-.home-title{
+.home-titles{
     border: 2px solid white;
     padding: 0.7rem;
     position: relative;
@@ -47,34 +55,34 @@ a{
     color: white;
 }
 
-.home-title h1, .home-title p{
+.home-titles h1, .home-titles p{
     user-select: none;
 }
 
-.home-title h1{
+.home-titles h1{
     font-size: 5rem;
     font-weight: 400;
 }
 
-.home-title p{
+.home-titles p{
     font-size: 1.7rem;
     font-weight: 300;
 }
 
 @media screen and (max-width: 700px){
-    .home-title h1{
+    .home-titles h1{
         font-size: 3.8rem;
     }
-    .home-title p{
+    .home-titles p{
         font-size: 1.2rem;
     }
 }
 
 @media screen and (max-width: 370px){
-    .home-title h1{
+    .home-titles h1{
         font-size: 3rem;
     }
-    .home-title p{
+    .home-titles p{
         font-size: 1.1rem;
     }
     #home{
@@ -85,7 +93,7 @@ a{
 /* Top navbar styles */
 
 .top-nav{
-    min-height: 10vh;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,5 +116,96 @@ a{
 header{
     position: sticky;
     top: 0;
+}
+
+#about{
+    /* border: 2px solid red; */
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Generic section titles */
+
+.section-titles{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.section-titles h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+
+.section-titles p{
+    margin-top: 1rem;
+    color: gray;
+}
+
+/* About section text and image */
+
+.about-info{
+    width: 45%;
+    padding: 1rem;
+    text-align: justify;
+}
+
+.about-info p{
+    font-weight: 300;
+}
+
+.about-info h3{
+    margin-top: 2rem;
+}
+
+p.job-title, .about-info h3{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+p.job-title{
+    margin: 1rem 0;
+}
+
+.cv-btn{
+    margin-top: 3rem;
+    padding: 0.5rem;
+    color: #fff;
+    background: linear-gradient(to right, #813ad9, #536cfc);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    margin-top: 2rem;
+}
+
+.about-img{
+    width: 500px;
+}
+
+@media screen and (max-width: 1000px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-info{
+        width: 80%;
+        text-align: center;
+    }
+
+    .about-img{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .about-info, .about-img{
+        width: 100%;
+    }   
 }
 
