@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
@@ -179,12 +183,9 @@ p.job-title{
 }
 
 .about-container{
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
-}
-
-.about-container{
-    margin-top: 2rem;
 }
 
 .about-img{
@@ -213,8 +214,10 @@ p.job-title{
     }   
 }
 
+/* Services section */
+
 .services-container{
-    margin: 6rem auto;
+    margin-top: 2rem;
     display: flex;
     text-align: center;
     justify-content: space-around;
@@ -258,4 +261,28 @@ p.job-title{
     .service{
         width: 90%;
     }
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 1000px){
+    .projects-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .projects-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+.projects-container img{
+    width: 90%;
 }
