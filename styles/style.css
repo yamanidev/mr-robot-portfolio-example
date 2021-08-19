@@ -264,11 +264,11 @@ p.job-title{
 }
 
 .projects-container{
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     justify-items: center;
-    margin-top: 2rem;
 }
 
 @media screen and (max-width: 1000px){
@@ -285,4 +285,103 @@ p.job-title{
 
 .projects-container img{
     width: 90%;
+}
+
+.skills-container{
+    margin-top: 5rem;
+    display: flex;
+}
+
+.skills-list{
+    width: 70%;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 5rem;
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-text{
+    width: 30%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    line-height: 1.8;
+}
+
+.skills-text hr{
+    width: 30%;
+    height: 0.4rem;
+    margin-top: 1rem;
+    background: #536dfd;
+    border: none;
+    text-align: center;
+}
+
+@media screen and (max-width: 870px){
+    .skills-text{
+        width: 40%;
+    }
+    .skills-list{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .skills-container{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+    }
+
+    .skills-list, .skills-text{
+        width: 80%;
+    }
+
+    .skills-text{
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .skills-text hr{
+        width: 20%;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    .skills-container{
+        margin-top: 3rem;
+    }
+
+    .skills-text{
+        width: 100%;
+    }
+
+    .skills-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.skill-logo{
+    margin-bottom: 0.5rem;
+}
+
+.skill figcaption{
+    font-size: 0.9rem;
+    color: gray;
+}
+
+
+.skill-logo, .skill figcaption{
+    width: 60px;
+    text-align: center;
 }
