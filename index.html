@@ -8,7 +8,7 @@
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Parisienne&display=swap" rel="stylesheet">  
     <title>Mr Robot Portfolio</title>
 </head>
 <body>
@@ -36,10 +36,10 @@
                         <a href="#projects">Projects</a>
                     </li>
                     <li>
-                        <a href="">Skills</a>
+                        <a href="#skills">Skills</a>
                     </li>
                     <li>
-                        <a href="">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -145,6 +145,32 @@
             </div>
         </section>
 
+        <section id="contact">
+            <div class="contact-container">
+                <div class="contact-text">
+                    <h3>If not now, when?<br>Let's work together.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus blanditiis fuga fugit optio suscipit. Facere consectetur eum quasi qui illum!</p>
+                    <span class="robot-signature">Robot</span>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="fullName" class="form-label">Full name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                        </div>
+                        <div class="form-group" class="form-label">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" class="form-control" rows="4" placeholder="Type your message" required></textarea>
+                        </div>
+                        <button type="submit" class="contact-btn">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
