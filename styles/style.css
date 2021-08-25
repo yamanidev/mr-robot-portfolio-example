@@ -52,7 +52,7 @@ button{
 
 section:not(:first-child){
     width: 80%;
-    margin: 8rem auto;
+    margin: 15rem auto;
 }
 
 main{
@@ -61,7 +61,7 @@ main{
 }
 
 
-/* Showcase styles */
+/* Home styles */
 
 #home{
     height: 90vh;
@@ -190,6 +190,10 @@ header{
 }
 
 /* About section */
+
+#about{
+    margin-top: 8rem;
+}
 
 .about-info{
     width: 45%;
@@ -435,6 +439,10 @@ p.job-title{
 }
 
 /* Contact section */
+
+#contact{
+    margin-bottom: 8rem;
+}
 
 .contact-container{
     display: flex;
