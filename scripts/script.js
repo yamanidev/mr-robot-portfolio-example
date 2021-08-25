@@ -1,4 +1,5 @@
 const scroll = new SmoothScroll(".top-nav a[href*='#']", {
-    speed: 550,
+    speed: 600,
+    speedAsDuration: true,
     offset: 120
 })
