@@ -55,6 +55,11 @@ section:not(:first-child){
     margin: 8rem auto;
 }
 
+main{
+    background-color: #f6f6f6;
+    background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
+}
+
 
 /* Showcase styles */
 
@@ -121,15 +126,42 @@ section:not(:first-child){
 }
 
 .top-nav-links{
+    height: 100%;
     width: 80%;
     display: flex;
     justify-content: space-around;
 }
 
-@media screen and (max-width: 370px){
+.top-nav-links li{
+    height: 100%;
+    width: 10%;
+}
+
+.top-nav-link{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in;
+}
+
+.top-nav-link:hover{
+    background: #fff;
+    color: #252b36;
+}
+
+@media screen and (max-width: 850px){
     /* This is until I figure out a design for the hamburger menu */
     .top-nav-links{
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    /* This is until I figure out a design for the hamburger menu */
+    .top-nav-links li{
+        width: 16%;
     }
 }
 
