@@ -1,12 +1,4 @@
-$(".top-nav a").on("click", function (e) {
-    if (this.hash !== "") {
-        e.preventDefault();
-        const hash = this.hash;
-        $("html, body").animate(
-            {
-                scrollTop: $(hash).offset().top - 120
-            },
-            600
-        );
-    }
-});
+const scroll = new SmoothScroll(".top-nav a[href*='#']", {
+    speed: 550,
+    offset: 120
+})
