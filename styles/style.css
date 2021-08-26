@@ -605,17 +605,31 @@ p.job-title{
 /* Footer */
 
 footer{
-    margin-top: auto;
-    padding: 0.8rem;
+    padding: 0.5rem;
     background-color: var(--main-dark-blue);
-    color: white;
     text-align: center;
+}
+
+.copyrights{
+    color: white;
     font-weight: bold;
     font-size: 1rem;
 }
 
+.made-with-love{
+    margin-top: 0.2rem;
+}
+
+.my-github{
+    transition: 0.2s all ease;
+}
+
+.my-github:hover{
+    color: #bebebe;
+}
+
 @media screen and (max-width: 400px){
-    footer{
+    .copyrights{
         font-size: 0.9rem;
     }
 }
