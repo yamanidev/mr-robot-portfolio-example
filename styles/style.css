@@ -331,6 +331,10 @@ p.job-title{
     cursor: pointer;
 }
 
+.project:hover{
+    transform: scale(1.05);
+}
+
 .project-overlay{
     position: absolute;
     top: 0;
