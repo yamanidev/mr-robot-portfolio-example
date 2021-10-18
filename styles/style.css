@@ -60,6 +60,10 @@ button{
     cursor: pointer;
 }
 
+textarea{
+    resize: none;
+}
+
 section:not(:first-child){
     width: 80%;
     margin: 15rem auto;
