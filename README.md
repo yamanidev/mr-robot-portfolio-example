@@ -4,8 +4,6 @@ A portfolio website example for a web developer.
 
 My excuse to cringe police: the name was imposed on me :3
 
-Here's the website [link](https://mr-robot-portfolio.netlify.app/).
-
 <a target="_blank" href="https://icons8.com/icon/6nsw3h9gk8M8/bot">Bot</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 
 Pictures from:
